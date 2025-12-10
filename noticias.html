@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias | TechNova</title>
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">TechNova</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav6">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav6">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="noticias.html" class="nav-link active">Noticias</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero text-center">
+    <h1 class="display-5 fw-bold">Noticias Tecnológicas</h1>
+    <p>Lo último del mundo tecnológico</p>
+  </section>
+
+
+  <section class="py-5">
+    <div class="container">
+
+      <div class="mb-5">
+        <h2 class="fw-bold mb-2">
+          <i class="bi bi-newspaper text-primary me-2"></i>Novedades y Noticias
+        </h2>
+        <p class="text-muted">Mantente actualizado sobre las noticias más importantes del sector tecnológico</p>
+      </div>
+
+      <ul class="nav nav-tabs mb-4 border-bottom" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="exito-tab" data-bs-toggle="tab" data-bs-target="#exito" type="button"
+            role="tab">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>Éxito
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="critico-tab" data-bs-toggle="tab" data-bs-target="#critico" type="button"
+            role="tab">
+            <i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>Crítico
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="aviso-tab" data-bs-toggle="tab" data-bs-target="#aviso" type="button" role="tab">
+            <i class="bi bi-info-circle-fill text-warning me-2"></i>Aviso
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content mb-5">
+
+        <div class="tab-pane fade show active" id="exito" role="tabpanel">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="alert alert-success" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <strong>¡Lanzamiento exitoso!</strong>
+                <p class="mb-0 mt-2">TechNova ha lanzado exitosamente su nuevo línea de smartphones con tecnología 5G de
+                  última generación.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="alert alert-success" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <strong>Premio internacional</strong>
+                <p class="mb-0 mt-2">Nuestros productos han ganado el premio a la mejor innovación tecnológica del año
+                  2025.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="alert alert-success" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <strong>Expansión global</strong>
+                <p class="mb-0 mt-2">TechNova abre 5 nuevas sedes en países europeos este trimestre para expandir su
+                  presencia mundial.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="critico" role="tabpanel">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <strong>Alerta de seguridad</strong>
+                <p class="mb-0 mt-2">Se ha detectado una vulnerabilidad crítica en algunos modelos. Se recomienda
+                  actualizar inmediatamente.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <strong>Disponibilidad limitada</strong>
+                <p class="mb-0 mt-2">Debido a la alta demanda, algunos productos están agotados temporalmente. Estimado
+                  disponible: 2 semanas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="aviso" role="tabpanel">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="alert alert-warning" role="alert">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                <strong>Mantenimiento programado</strong>
+                <p class="mb-0 mt-2">El servicio de soporte estará en mantenimiento el próximo sábado de 2am a 6am.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="alert alert-warning" role="alert">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                <strong>Cambios en políticas</strong>
+                <p class="mb-0 mt-2">A partir del 1 de enero, se aplicarán nuevas políticas de garantía. Consulta los
+                  detalles aquí.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="alert alert-warning" role="alert">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                <strong>Evento próximo</strong>
+                <p class="mb-0 mt-2">Únete a nuestro evento de presentación de productos el 20 de diciembre. ¡Registrate
+                  ya!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-5 mb-5">
+        <div class="col-lg-10 mx-auto">
+          <h3 class="fw-bold mb-4">
+            <i class="bi bi-question-circle text-primary me-2"></i>Preguntas frecuentes del sistema
+          </h3>
+
+          <div class="accordion" id="faqNoticias">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  <i class="bi bi-question-circle text-primary me-2"></i>
+                  ¿Cómo recibo notificaciones de noticias?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqNoticias">
+                <div class="accordion-body">
+                  Puedes habilitar notificaciones en tu cuenta de usuario. Ve a Configuración > Notificaciones y
+                  selecciona
+                  las categorías que deseas recibir (Éxito, Crítico, Aviso).
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  <i class="bi bi-question-circle text-primary me-2"></i>
+                  ¿Qué diferencia hay entre los tipos de alertas?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqNoticias">
+                <div class="accordion-body">
+                  <strong>Éxito:</strong> Anuncios positivos y logros de la empresa<br>
+                  <strong>Crítico:</strong> Alertas de seguridad y problemas importantes<br>
+                  <strong>Aviso:</strong> Información general y cambios que debes conocer
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  <i class="bi bi-question-circle text-primary me-2"></i>
+                  ¿Con qué frecuencia se actualizan las noticias?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqNoticias">
+                <div class="accordion-body">
+                  Las noticias se actualizan diariamente. Las alertas críticas se publican en tiempo real para
+                  asegurar que recibas la información más importante de inmediato.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="bg-primary text-white p-4">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <p class="mb-0">© 2025 TechNova | Noticias</p>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com" target="_blank" class="text-white me-3">
+          <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="text-white me-3">
+          <i class="bi bi-youtube" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | TechNova</title>
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">TechNova</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav4">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav4">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="noticias.html" class="nav-link">Noticias</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link active">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero text-center">
+    <h1 class="display-5 fw-bold">Contacto</h1>
+    <p>Estamos listos para ayudarte</p>
+  </section>
+
+
+  <section class="py-5">
+    <div class="container">
+
+      <div class="row mb-5">
+        <h2 class="fw-bold mb-4 text-center">Información de Contacto</h2>
+
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-primary p-4 text-center h-100">
+            <i class="bi bi-telephone-fill text-primary display-4 mb-3"></i>
+            <h5 class="fw-bold">Teléfono</h5>
+            <p class="text-muted">+51 (1) 2345-6789</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip"
+              data-bs-title="Llamar ahora">Contactar</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-primary p-4 text-center h-100">
+            <i class="bi bi-envelope-fill text-primary display-4 mb-3"></i>
+            <h5 class="fw-bold">Email</h5>
+            <p class="text-muted">info@technova.com</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip"
+              data-bs-title="Enviar correo">Escribir</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-primary p-4 text-center h-100">
+            <i class="bi bi-geo-alt-fill text-primary display-4 mb-3"></i>
+            <h5 class="fw-bold">Ubicación</h5>
+            <p class="text-muted">Lima, Perú</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="popover" data-bs-title="Horario"
+              data-bs-content="Lun - Vie: 9am - 6pm">Ver ubicación</button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <div class="row mb-5">
+        <h2 class="fw-bold mb-4 text-center">Horario de Atención</h2>
+        <div class="col-md-8 mx-auto">
+          <table class="table table-striped table-hover shadow-sm">
+            <thead class="table-primary">
+              <tr>
+                <th>Día</th>
+                <th>Horario</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Lunes a Viernes</strong></td>
+                <td>9:00 AM - 6:00 PM</td>
+                <td><span class="badge bg-success">Abierto</span></td>
+              </tr>
+              <tr>
+                <td><strong>Sábado</strong></td>
+                <td>10:00 AM - 4:00 PM</td>
+                <td><span class="badge bg-success">Abierto</span></td>
+              </tr>
+              <tr>
+                <td><strong>Domingo</strong></td>
+                <td>Cerrado</td>
+                <td><span class="badge bg-danger">Cerrado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white border-0">
+              <h5 class="modal-title">
+                <i class="bi bi-check-circle-fill me-2"></i>¡Mensaje recibido!
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center py-4">
+              <p class="fs-5">Tu mensaje ha sido recibido.</p>
+              <p class="text-muted">Te responderemos lo más pronto posible.</p>
+            </div>
+            <div class="modal-footer border-0">
+              <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-success alert-dismissible fade d-none" id="successAlert" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        <strong>¡Mensaje recibido!</strong> Tu mensaje ha sido recibido. Te responderemos lo más pronto posible.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 mb-4">
+          <h3 class="fw-bold mb-4">
+            <i class="bi bi-chat-left-text text-primary me-2"></i>Envíanos un mensaje
+          </h3>
+
+          <form class="needs-validation" id="contactForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" placeholder="Tu nombre" class="form-control form-control-lg" required>
+              <div class="invalid-feedback d-block">Por favor ingresa tu nombre.</div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" placeholder="tu@email.com" class="form-control form-control-lg" required>
+              <div class="invalid-feedback d-block">Por favor ingresa un email válido.</div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Asunto</label>
+              <input type="text" placeholder="Asunto del mensaje" class="form-control form-control-lg" required>
+              <div class="invalid-feedback d-block">Por favor ingresa un asunto.</div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Mensaje</label>
+              <textarea placeholder="Escribe tu mensaje aquí..." rows="6" class="form-control form-control-lg"
+                required></textarea>
+              <div class="invalid-feedback d-block">Por favor escribe un mensaje.</div>
+            </div>
+
+            <div class="d-grid gap-2 mb-3">
+              <button type="submit" class="btn btn-primary btn-lg fw-bold">
+                <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <h3 class="fw-bold mb-4">
+            <i class="bi bi-map text-primary me-2"></i>Nuestra ubicación
+          </h3>
+
+          <div class="ratio ratio-16x9 mb-4 shadow rounded">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.515827691342!2d-77.037549!3d-12.046374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8cbf95f11c5%3A0xe8886e59b9ce28f3!2sLima!5e0!3m2!1ses!2spe!4v1700000000000"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+
+          <div class="card border-0 bg-light p-4">
+            <h5 class="fw-bold mb-3">
+              <i class="bi bi-exclamation-circle text-warning me-2"></i>Información importante
+            </h5>
+            <p class="mb-2">
+              <strong>Respuesta rápida:</strong> Respondemos en menos de 24 horas
+            </p>
+            <p class="mb-0">
+              <strong>Soporte:</strong> Disponible vía email y teléfono
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-primary text-white p-4">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <p class="mb-0">© 2025 TechNova | Contacto</p>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com" target="_blank" class="text-white me-3">
+          <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="text-white me-3">
+          <i class="bi bi-youtube" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+
+    const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity() === false) {
+        e.stopPropagation();
+      }
+
+      form.classList.add('was-validated');
+
+      if (form.checkValidity() === true) {
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
+
+        form.reset();
+        form.classList.remove('was-validated');
+      }
+    }, false);
+  </script>
+</body>
+
+</html>
